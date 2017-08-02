@@ -25,6 +25,7 @@ export default class extends React.Component {
         <Head>
           <title>Enviar email</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link rel="shortcut icon" type="image/png" href="/static/favicon.ico"/>
         </Head>
 
         <div>

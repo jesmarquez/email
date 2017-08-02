@@ -42,7 +42,7 @@ var _head2 = _interopRequireDefault(_head);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'D:\\dev\\nodejs\\email\\pages\\index.js?entry';
+var _jsxFileName = 'D:\\jamarquez\\nodejs\\email\\pages\\index.js?entry';
 
 
 var _class = function (_React$Component) {
@@ -85,23 +85,27 @@ var _class = function (_React$Component) {
           fileName: _jsxFileName,
           lineNumber: 27
         }
+      }), _react2.default.createElement('link', { rel: 'shortcut icon', type: 'image/png', href: '/static/favicon.ico', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        }
       })), _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 31
         }
       }, _react2.default.createElement('form', { onSubmit: this.sendEmail, __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 32
         }
       }, 'Has click para enviar email!', _react2.default.createElement('input', { type: 'submit', value: 'Enviar', __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 34
         }
       }))), _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 37
         }
       }, this.props.userAgent));
     }
