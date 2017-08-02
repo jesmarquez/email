@@ -25,6 +25,8 @@
   "dependencies": {
     "express": "^4.15.3",
     "next": "^3.0.1-beta.20",
+    "nodemailer": "^4.0.1",
+    "nodemailer-smtp-transport": "^2.7.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   }

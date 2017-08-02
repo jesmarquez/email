@@ -29,7 +29,7 @@ export default class extends React.Component {
         </Head>
 
         <div>
-          <form onSubmit={this.sendEmail}>
+          <form method="post" action="/check-email">
             Has click para enviar email!
             <input type="submit" value="Enviar"/>
           </form>
