@@ -2,10 +2,21 @@ import React from 'react'
 import Head from 'next/head'
 
 export default class extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.sendEmail = this.sendEmail.bind(this)
+  }
+
   static async getInitialProps ({ req }) {
     return req
       ? { userAgent: req.headers['user-agent'] }
       : { userAgent: navigator.userAgent }
+  }
+
+  sendEmail(event) {
+    event.preventDefault()
+    console.log('sendEmail')
   }
 
   render() {
@@ -17,7 +28,7 @@ export default class extends React.Component {
         </Head>
 
         <div>
-          <form>
+          <form onSubmit={this.sendEmail}>
             Has click para enviar email!
             <input type="submit" value="Enviar"/>
           </form>

@@ -42,58 +42,66 @@ var _head2 = _interopRequireDefault(_head);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'D:\\jamarquez\\nodejs\\email\\pages\\index.js?entry';
+var _jsxFileName = 'D:\\dev\\nodejs\\email\\pages\\index.js?entry';
 
 
 var _class = function (_React$Component) {
   (0, _inherits3.default)(_class, _React$Component);
 
-  function _class() {
+  function _class(props) {
     (0, _classCallCheck3.default)(this, _class);
 
-    return (0, _possibleConstructorReturn3.default)(this, (_class.__proto__ || (0, _getPrototypeOf2.default)(_class)).apply(this, arguments));
+    var _this = (0, _possibleConstructorReturn3.default)(this, (_class.__proto__ || (0, _getPrototypeOf2.default)(_class)).call(this, props));
+
+    _this.sendEmail = _this.sendEmail.bind(_this);
+    return _this;
   }
 
   (0, _createClass3.default)(_class, [{
+    key: 'sendEmail',
+    value: function sendEmail(event) {
+      event.preventDefault();
+      console.log('sendEmail');
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 24
         }
       }, _react2.default.createElement(_head2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 25
         }
       }, _react2.default.createElement('title', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 26
         }
       }, 'Enviar email'), _react2.default.createElement('meta', { name: 'viewport', content: 'initial-scale=1.0, width=device-width', __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 27
         }
       })), _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 30
         }
-      }, _react2.default.createElement('form', {
-        __source: {
+      }, _react2.default.createElement('form', { onSubmit: this.sendEmail, __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 31
         }
       }, 'Has click para enviar email!', _react2.default.createElement('input', { type: 'submit', value: 'Enviar', __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 33
         }
       }))), _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 36
         }
       }, this.props.userAgent));
     }

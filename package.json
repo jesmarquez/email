@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/jesmarquez/email#readme",
   "dependencies": {
+    "express": "^4.15.3",
     "next": "^3.0.1-beta.20",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
